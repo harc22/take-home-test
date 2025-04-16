@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>Content Not Being Cached</title>
+</head>
+<body>
+  <h1>Customer Support Response - Content Not Being Cached</h1>
+    <p><strong>Customer Question:</strong> Why is Cloudflare’s caching not working on my site?</p>
+
+  <h2>Response:</h2>
+    <p>Hi there,</p>
+    <p>Thanks for reaching out. Based on the response headers you shared, your origin server is sending cache control 
+      headers that tell Cloudflare not to cache your content (<code>Cache-Control: no-store, no-cache</code>).</p>
+    <p>To enable caching, you’ll want to adjust your origin’s headers. Let me know if you’d like help setting that up</p>
+    <p>Regards,</p>
+    <p>Hugo Cabrita</p>
+
+  <h2>Thought Process:</h2>
+    <p>Analyse the customer logs and verify the header cache configuration and advise the customer how he can solve it</p>
+
+  <h2>Tools I Used:</h2>
+    <ul>
+      <li>Cloudflare Page Rules / Cache Rules – to control caching behavior</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>Cloudflare Nameservers</title>
+</head>
+<body>
+  <h1>Customer Support Response - Nameservers</h1>
+    <p><strong>Customer Question:</strong> How are Cloudflare's nameservers different from the DNS provided by Google DNS or OpenDNS? 
+      Can I delegate to Cloudflare nameservers while still using my host’s DNS?</p>
+
+  <h2>Response:</h2>
+    <p>Hi there,</p>
+    <p>Thanks for reaching out. Cloudflare's nameservers differ from services like Google DNS or OpenDNS 
+      in that Cloudflare acts as your authoritative DNS provider, not just a resolver. 
+      This means Cloudflare manages your DNS records and responds to queries on behalf of your domain. 
+      Regarding the second question, since Cloudflare is your sole authoritative DNS provider that means
+      that all DNS records must be managed in Cloudflare and your host’s DNS cannot be used.
+    </p>
+    <p>Hope this answers your question.</p>
+    <p>Regards,</p>
+    <p>Hugo Cabrita</p>
+
+  <h2>Thought Process:</h2>
+    <p>You can’t delegate only partially to Cloudflare. Once Cloudflare nameservers are set at the registrar level, 
+      all DNS must be managed via Cloudflare. You can import existing records from your host to avoid disruption.</p>
+
+</body>
+</html>

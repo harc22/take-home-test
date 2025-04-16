@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Workers Not Applied</title>
+</head>
+<body>
+  <h1>Customer Support Response - Workers Not Applied</h1>
+    <p><strong>Customer Question:</strong> I've just added a Worker on the Cloudflare Dashboard for my website: 
+    it works in the debugger but doesn't work when I query the site. Why is that? Is there anything to activate or anything I could check?</p>
+
+  <h2>Response:</h2>
+    <p>Hi there,</p>
+    <p>Thanks for reaching out. If your Worker works in the debugger but not when you access the live site, 
+    the most common issue is that the route isn't correctly configured. Please check that the Worker is 
+    deployed and bound to the correct route (e.g. <code>customer-website.com</code>).</p>
+    <p>Regards,</p>
+    <p>Hugo Cabrita</p>
+
+  <h2>Thought Process:</h2>
+    <p>Workers must be associated with a route to be applied to live traffic. 
+      The debugger runs the Worker code in isolation, so route binding is not required there. This mismatch is often the root cause.</p>
+  
+  <h2>Tools Used:</h2>
+    <ul>
+      <li>Cloudflare Workers Dashboard – to confirm deployment and route binding</li>
+    </ul>
+
+</body>
+</html>

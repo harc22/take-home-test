@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <title>Why Is My Site Coming from California?</title>
+</head>
+<body>
+  <h1>Customer Support Response - Why Is My Site Coming from California?</h1>
+    <p><strong>Customer Question:</strong> I’m in London, but looking at your IPs it shows that you are serving my website from California. 
+      Can that be right? Why is that? I thought you were supposed to serve my website from some places close to me?</p>
+
+  <h2>Response:</h2>
+    <p>Hi there,</p>
+    <p>Thanks for reaching out. Cloudflare operates in a way that allows us to cache and serve your content from multiple data centers worldwide. 
+      When you check the IPs, you may see one of our edge locations serving content. This is normal and part of Cloudflare’s routing to improve performance.
+      It is also possible that it is happening because of your ISP routing or heavy load on the nearby edges.</p>
+    <p>If for any reason you experience any performance issues, please let us know so we can promptly provide assistance.</p>
+    <p>Regards,</p>
+    <p>Hugo Cabrita</p>
+
+  <h2>Thought Process:</h2>
+    <p> Assumed that Cloudflare automatically chooses the closest data center to serve content based on the location of the customer. 
+      If the customer is located in London, typically Cloudflare should serve the website from a nearby European data center. 
+      However, if the Californian server is the chosen edge location is because it was determined as optimal in terms of performance.</p>
+
+  <h2>Tools I Used:</h2>
+    <ul>
+      <li><strong>Cloudflare Analytics</strong> – to check geographical routing and data center selection</li>
+    </ul>
+
+</body>
+</html>

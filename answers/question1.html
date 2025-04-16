@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <title>Site Down - Your Nameservers Are Down</title>
+</head>
+<body>
+  <h1>Customer Support Response - Site Down</h1>
+    <p><strong>Customer Question:</strong> I am having trouble reaching my website http://customer-website.com/ from different networks. 
+      Are your nameservers working properly?</p>
+
+  <h2>Response:</h2>
+    <p>Hi there,</p>
+    <p>Thanks for reaching out. I’ve checked your domain settings and I can confirm that Cloudflare’s nameservers are operational and 
+      responding correctly worldwide.</p>
+    <p>Given that you're unable to reach your site but our nameservers are up I took the liberty to ensure the DNS configuration is correct on your side, 
+      which it is. I would then like to suggest that you test the DNS resolution and flush the DNS cache.</p>
+    <p>Please let me know if the issue persists, if so I'll be happy to dig deeper.</p>
+    <p>Regards,</p>
+    <p>Hugo Cabrita</p>
+  
+  <h2>Thought Process:</h2>
+    <p>Given that the customer is unable to reach our DNS:</p>
+    <p>1. Verify that Cloudflare's DNS is up</p>
+    <p>2. Verify the DNS configurations on the customer side</p>
+    <p>3. Test DNS resolution and flush DNS cache</p>
+    <p>4. Test the connection via a differnte device.</p>
+  
+  <h2>Tools I Used:</h2>
+    <ul>
+      <li><strong>DNS Checker</strong> (e.g., dnschecker.org) – to verify propagation of Cloudflare nameservers</li>
+      <li><strong>Cloudflare Dashboard</strong> – to confirm DNS records and status</li>
+      <li><strong>ping</strong> – to test connectivity to origin server</li>
+    </ul>
+
+  
+</body>
+</html>
